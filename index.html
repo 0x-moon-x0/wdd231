@@ -3,11 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
+    <title>Course Home Page</title>
+    <meta name="author" content="Katherine Druchok">
+    <meta name="description" content="A home page for the WDD231 course.">
     <link rel="stylesheet" href="styles/normalize.css">
-    <!-- or <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD231 - Katherine Druchok</h1>
+
+    <header>
+        <button id="menu"></button>
+        <img src="images/selfie.webp" alt="Katherine Druchok Selfie">
+        <span>Katherine Druchok</span>
+
+        <div class="nav-container">
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Chamber</a></li>
+                    <li><a href="https://github.com/0x-moon-x0">GitHub Profile</a></li>
+                    <li><a href="www.linkedin.com/in/katherine-druchok">LinkedIn</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <section id="course">
+            <h2>Course Work</h2>
+            <ul>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+            </ul> 
+        </section>
+
+        <section id="place">
+            <h2>Calgary, Alberta</h2>
+            <img src="images/downtown.webp" alt="Calgary, Downtown">
+            <figcaption>Skyscrapers in Downtown Calgary</figcaption>
+        </section>
+
+        <section id="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+
+            <div id="filter-buttons">
+                <button id="all-btn">All</button>
+                <button id="wdd-btn">WDD</button>
+                <button id="cse-btn">CSE</button>
+            </div>
+
+            <div id="courses-list"></div>
+
+            <p>Total Credits: <span id="total-credits">0</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> Katherine Druchok | Canada | Alberta 🍁</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
 </body>
 </html>
