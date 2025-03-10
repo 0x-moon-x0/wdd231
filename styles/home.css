@@ -1,7 +1,178 @@
 :root {
     --font: "Urbanist", sans-serif;
-    --theme-color: #B58DB6;
+    --primary-color: #B58DB6;
     --light-color: #F4F4ED;
     --dark-color: #201E1E;
-    --
+    --secondary-color: #B7B8BE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+    font-weight: 400;
+}
+
+body {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+#selfie {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+header span {
+    font-size: 2rem;
+    margin-top: 5px;
+}
+
+#menu {
+    color: var(--dark-color);
+    font-size: 2rem;
+    border: none;
+    background: none;
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    right: 10px;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✕";
+}
+
+.nav-container {
+    width: 100%;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    gap: 10px;
+}
+
+.navbar a {
+    color: var(--dark-color);
+    display: none;
+    padding: 1.2rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: var(--dark-color);
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.open a {
+    display: block;
+}
+
+navbar a.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.course-card {
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.4rem;
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+section {
+    padding: 25px;
+    margin-bottom: 35px;
+}
+
+#downtown-img {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 15px;
+}
+
+#certificate p {
+    padding: 10px;
+    text-align: center;
+}
+
+#total-credits {
+    font-weight: bold;
+}
+
+.completed {
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+}
+
+.incomplete {
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+}
+
+#filter-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px;
+}
+
+button {
+    background-color: var(--secondary-color);
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: var(--dark-color);
+    color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    position: relative;
+    text-align: center;
+    padding: 30px;
+    font-size: 1.2rem;
 }
