@@ -1,0 +1,74 @@
+@media screen and (min-width: 768px) {
+    header {
+        padding: 30px 50px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #selfie {
+        width: 80px;
+        height: 80px;
+    }
+
+    header span {
+        font-size: 2.5rem;
+    }
+
+    .nav-container {
+        background-color: var(--dark-color);
+    }
+
+    .navbar {
+        padding-top: 0;
+        padding-bottom: 25px;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .navbar a {
+        font-size: 1.2rem;
+        color: var(--light-color);
+    }
+
+    .navbar a:hover {
+        background-color: var(--primary-color);
+        color: var(--dark-color);
+    }
+
+    .navbar a.active {
+        border-bottom: 3px solid var(--primary-color);
+    }
+
+    h1 {
+        text-align: left;
+        margin-left: 2rem;
+        padding: 20px;
+    }
+
+    .course-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4rem;
+        justify-content: center;
+    }
+
+    #course, #place {
+        width: 45%;
+        min-width: 300px;
+    }
+    
+    section {
+        box-shadow: 0 2px 4px var(--secondary-color);
+    }
+
+    #course-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+}
