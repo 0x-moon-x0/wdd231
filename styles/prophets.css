@@ -1,0 +1,76 @@
+:root {
+    --font: "Urbanist", sans-serif;
+    --primary-color: #B58DB6;
+    --light-color: #F4F4ED;
+    --dark-color: #201E1E;
+    --secondary-color: #B7B8BE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+    font-weight: 400;
+    color: var(--dark-color);
+}
+
+body {
+    position: relative;
+    background-color: var(--light-color);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    padding: 15px;
+    margin-bottom: 40px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    padding: 10px;
+    font-weight: bold;
+}
+
+main {
+    margin: 2rem;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+}
+
+section {
+    margin: 0.25rem;
+    padding: 0.35rem;
+    box-shadow: 0 2px 4px var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: auto;
+    max-width: 340px;
+    padding: 10px;
+}
+
+span {
+    font-style: italic;
+}
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 35px;
+    font-size: 1.3rem;
+}
