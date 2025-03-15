@@ -25,7 +25,33 @@ header {
     flex-direction: column;
     background-color: var(--primary-color);
     padding: 15px;
+}
+
+nav {
+    background-color: var(--dark-color);
+    padding: 30px;
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+button {
+    background-color: var(--secondary-color);
+    padding: 5px 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: var(--dark-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
 }
 
 h1 {

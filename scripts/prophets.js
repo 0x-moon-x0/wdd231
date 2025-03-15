@@ -1,14 +1,59 @@
 const url = 'https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json';
+
 const cards = document.querySelector('#cards');
+const buttons = document.querySelectorAll('nav button');
+
+let allProphets = [];
 
 async function getProphetData(url) {
     const response = await fetch(url);
     const data = await response.json();
 
-    displayProphets(data.prophets);
+    allProphets = data.prophets;
+    displayProphets(allProphets);
 }
 
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        buttons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        let filteredProphets = allProphets;
+
+        switch (button.id) {
+            case 'utah':
+                filteredProphets = allProphets.filter(prophet => prophet.birthplace.includes('Utah'));
+                break;
+            case 'non-us':
+                filteredProphets = allProphets.filter(prophet =>
+                    !['United States', 'Utah', 'Vermont', 'Idaho', 'Ohio', 'Missouri', 'Connecticut'].includes(prophet.birthplace)
+                );
+                break;
+            case 'old':
+                filteredProphets = allProphets.filter(prophet => {
+                    const birthYear = parseInt(prophet.birthdate.split(' ')[2]);
+                    const deathYear = prophet.death ? parseInt(prophet.death.split(' ')[2]) : new Date().getFullYear();
+                    return (deathYear - birthYear) >= 95;
+                });
+                break;
+            case 'children':
+                filteredProphets = allProphets.filter(prophet => prophet.numofchildren >= 10);
+                break;
+            case 'served':
+                filteredProphets = allProphets.filter(prophet => prophet.length >= 15);
+                break;
+            case 'all':
+                filteredProphets = allProphets;
+                break;    
+        }
+
+        displayProphets(filteredProphets);
+    });
+});
+
 const displayProphets = (prophets) => {
+    cards.innerHTML = '';
+
     prophets.forEach(prophet => {
         let card = document.createElement('section');
         let fullName = document.createElement('h2');
