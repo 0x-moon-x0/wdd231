@@ -1,0 +1,29 @@
+#menu {
+    font-size: 2rem;
+    border: none;
+    background: none;
+    position: absolute;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✕";
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5 ease-out;
+}
+
+.navbar {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
