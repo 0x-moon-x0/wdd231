@@ -1,0 +1,72 @@
+[
+    {
+      "name": "Summit Tech Solutions",
+      "address": "123 Innovation Drive, Calgary, AB T2P 3N4",
+      "phone": "(403) 555-1234",
+      "website": "https://www.summittech.ca",
+      "image": "https://0x-moon-x0.github.io/wdd231/chamber/images/summit-tech-logo.webp",
+      "membership_level": 3,
+      "category": "Technology",
+      "description": "Providing cutting-edge software and IT solutions for businesses."
+    },
+    {
+      "name": "Prairie Builders Ltd.",
+      "address": "456 Construction Ave, Airdrie, AB T4A 1E5",
+      "phone": "(403) 555-5678",
+      "website": "https://www.prairiebuilders.ca",
+      "image": "prairiebuilders.png",
+      "membership_level": 2,
+      "category": "Construction",
+      "description": "Experts in commercial and residential construction projects."
+    },
+    {
+      "name": "Maple Leaf Accounting",
+      "address": "789 Finance St, Calgary, AB T2Y 5K6",
+      "phone": "(403) 555-9012",
+      "website": "https://www.mapleleafaccounting.ca",
+      "image": "mapleleafaccounting.png",
+      "membership_level": 1,
+      "category": "Financial Services",
+      "description": "Offering top-tier accounting and tax services to local businesses."
+    },
+    {
+      "name": "Rocky Mountain Coffee Roasters",
+      "address": "321 Espresso Blvd, Edmonton, AB T5J 4R7",
+      "phone": "(780) 555-3456",
+      "website": "https://www.rockymountaincoffee.ca",
+      "image": "rockymountaincoffee.png",
+      "membership_level": 3,
+      "category": "Food & Beverage",
+      "description": "Locally roasted coffee beans and artisanal café experiences."
+    },
+    {
+      "name": "Wild Prairie Marketing",
+      "address": "987 Digital Way, Okotoks, AB T1S 1B1",
+      "phone": "(403) 555-6789",
+      "website": "https://www.wildprairiemarketing.ca",
+      "image": "wildprairiemarketing.png",
+      "membership_level": 2,
+      "category": "Marketing & Advertising",
+      "description": "Helping businesses grow through innovative digital marketing solutions."
+    },
+    {
+      "name": "Alberta Green Energy",
+      "address": "654 Renewable Dr, Red Deer, AB T4N 3M4",
+      "phone": "(403) 555-2345",
+      "website": "https://www.albertagreen.ca",
+      "image": "albertagreen.png",
+      "membership_level": 1,
+      "category": "Renewable Energy",
+      "description": "Providing sustainable energy solutions across Alberta."
+    },
+    {
+      "name": "Northern Lights Tourism",
+      "address": "159 Adventure Rd, Canmore, AB T1W 2B5",
+      "phone": "(403) 555-7890",
+      "website": "https://www.northernlightstourism.ca",
+      "image": "northernlightstourism.png",
+      "membership_level": 3,
+      "category": "Travel & Hospitality",
+      "description": "Experience breathtaking landscapes and adventures in the Canadian Rockies."
+    }
+  ]

@@ -1,3 +1,20 @@
+:root {
+    --font: "Urbanist", sans-serif;
+    --primary-color: #B58DB6;
+    --light-color: #F4F4ED;
+    --dark-color: #201E1E;
+    --secondary-color: #B7B8BE;
+    --extra-color: #403F3E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+    font-weight: 400;
+}
+
 #menu {
     font-size: 2rem;
     border: none;
