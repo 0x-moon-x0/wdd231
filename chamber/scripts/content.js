@@ -15,7 +15,7 @@ async function getMembers() {
         }
 
         const members = await response.json();
-        allMembers = DataTransfer;
+        allMembers = members;
         displayMembers(allMembers, 'grid');
     } catch (error) {
         console.error('Error fetching data:', error);

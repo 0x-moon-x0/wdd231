@@ -15,12 +15,47 @@
     font-weight: 400;
 }
 
+body {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    background-color: var(--primary-color);
+    padding: 30px;
+}
+
+#logo {
+    width: 130px;
+    margin-right: 20px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 8px;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
 #menu {
-    font-size: 2rem;
+    font-size: 2.2rem;
     border: none;
     background: none;
     position: absolute;
     cursor: pointer;
+    top: 15px;
+    right: 15px;
 }
 
 #menu::before {
@@ -32,15 +67,79 @@
 }
 
 nav {
+    font-size: 1.2rem;
     display: grid;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.5 ease-out;
+    width: 100%;
+    background-color: var(--dark-color);
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+    padding: 15px;
 }
 
 .navbar {
     overflow: hidden;
 }
 
-nav.open {
-    grid-template-rows: 1fr;
+.navbar li {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--light-color);
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--primary-color);
+}
+
+.layout-select {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.layout-select button {
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    margin: 0 5px;
+}
+
+.layout-select button:hover,
+.layout-select button:focus {
+    background-color: var(--dark-color);
+    color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    position: relative;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    font-size: 1.2rem;
+}
+
+.socials img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 50px;
+    height: 50px;
+    gap: 30px;
+}
+
+.socials a {
+    text-decoration: none;
 }
