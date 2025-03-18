@@ -27,7 +27,7 @@ function displayMembers(members, view = 'grid') {
     cardsContainer.className = view;
 
     members.forEach(member => {
-        const card = document.createElement('div');
+        const card = document.createElement('section');
         card.classList.add('member-card', view);
         
         const content = `

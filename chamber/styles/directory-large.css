@@ -1,15 +1,37 @@
 @media only screen and (min-width: 768px) {
    
+    #logo {
+        margin-left: 50px;
+    }
+
     #menu {
         display: none;
     }
 
-    .navbar a, .navbar a.open {
+    ul.navbar, ul.navbar.open {
         display: flex;
-        justify-content: flex-end;
+        justify-content: right;
+        gap: 80px;
+        margin-right: 35px;
+    }
+
+    .navbar a:hover {
+        background-color: var(--primary-color);
+        color: var(--dark-color);
     }
 
     nav {
+        padding: 10px;
         grid-template-rows: 1fr;
-    } 
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .socials img {
+        width: 80px;
+        gap: 20px;
+    }
 }

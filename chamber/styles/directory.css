@@ -25,12 +25,13 @@ header {
     flex-direction: row;
     align-items: space-between;
     background-color: var(--primary-color);
-    padding: 30px;
+    padding: 25px;
 }
 
 #logo {
     width: 130px;
     margin-right: 20px;
+    border-radius: 50%;
 }
 
 .header-text {
@@ -66,37 +67,46 @@ h4 {
     content: "✕";
 }
 
-nav {
-    font-size: 1.2rem;
-    display: grid;
-    grid-template-rows: 0fr;
-    transition: grid-template-rows 0.5 ease-out;
-    width: 100%;
-    background-color: var(--dark-color);
-}
-
-nav.open {
-    grid-template-rows: 1fr;
+ul.navbar li a {
+    display: block;
     padding: 15px;
-}
-
-.navbar {
-    overflow: hidden;
-}
-
-.navbar li {
-    list-style: none;
-    padding: 10px 0;
-}
-
-.navbar a {
-    text-decoration: none;
     color: var(--light-color);
+    text-decoration: none;
     transition: 0.3s;
 }
 
 .navbar a:hover {
     color: var(--primary-color);
+}
+
+ul.navbar {
+    list-style-type: none;
+}
+
+.navbar a.active {
+    border-bottom: 3px solid var(--primary-color);
+    font-weight: bold;
+}
+
+nav {
+    background-color: var(--dark-color);
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+    font-size: 1.2rem;
+    margin-bottom: 90px;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+main {
+    margin: 2rem;
 }
 
 .layout-select {
@@ -112,13 +122,94 @@ nav.open {
     cursor: pointer;
     font-size: 1.5rem;
     transition: 0.3s;
-    margin: 0 5px;
+    margin: 0 20px 30px;
 }
 
 .layout-select button:hover,
 .layout-select button:focus {
     background-color: var(--dark-color);
     color: var(--primary-color);
+}
+
+#cards.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+}
+
+#cards.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.member-card.list:nth-child(even) {
+    background-color: var(--secondary-color);
+}
+
+.member-card.list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    border-bottom: 1px solid var(--extra-color);
+    width: 100%;
+}
+
+.member-card.list h3 {
+    flex: 2;
+    margin: 0;
+    font-size: 1.2rem;
+    min-width: 120px;
+}
+
+.member-card.list p {
+    flex: 2;
+    margin: 0;
+    font-size: 1rem;
+    min-width: 120px;
+}
+
+.member-card.list a {
+    flex: 3;
+    text-align: right;
+    word-break: break-word;
+    min-width: 150px;
+}
+
+.member-card.list a:hover {
+    color: #7e3380;
+}
+
+.member-card img {
+    width: auto;
+    max-width: 160px;
+    padding: 10px;
+}
+
+section {
+    margin: 0.25rem;
+    padding: 1rem;
+    box-shadow: 0 2px 4px var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member-card h3 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.member-card p {
+    padding: 4px;
+}
+
+.bold-span {
+    font-weight: bold;
 }
 
 footer {
@@ -130,6 +221,10 @@ footer {
     flex-direction: column;
     padding: 30px;
     font-size: 1.2rem;
+}
+
+footer p {
+    padding: 3px;
 }
 
 .socials img {
