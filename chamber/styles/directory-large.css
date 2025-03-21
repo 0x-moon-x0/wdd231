@@ -26,11 +26,5 @@
 
     footer {
         flex-direction: row;
-        justify-content: space-between;
-    }
-    
-    .socials img {
-        width: 80px;
-        gap: 20px;
     }
 }
