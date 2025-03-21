@@ -25,13 +25,13 @@
 </head>
 <body>
     <header>
-        <button id="menu"></button>
+        <button id="menu" aria-label="Toggle Navigation Menu"></button>
 
-        <img id="logo" src="images/calgary-chamber-logo.webp" alt="Logo of the Calgary Chamber of Commerce">
+        <img width='500' height='500' id="logo" src="images/calgary-chamber-logo.webp" alt="Calgary Chamber of Commerce Logo">
         
         <div class="header-text">
-            <h2>Calgary</h2>
-            <h4>Chamber of Commerce</h4>
+            <p id="page-title">Calgary</p>
+            <p id="page-subtitle">Chamber of Commerce</p>
         </div>
     </header>
 
@@ -45,14 +45,16 @@
     </nav>
 
     <main>
-        <h1>Business Directory</h1>
+        <h1 id="directory-title">Business Directory</h1>
 
-        <div class="layout-select">
-            <button id="grid">⊞ Grid</button>
-            <button id="list">☳ List</button>
-        </div>
+        <section aria-labelledby="directory-title">
+            <div class="layout-select">
+                <button id="grid">⊞ Grid</button>
+                <button id="list">☳ List</button>
+            </div>
 
-        <div id="cards"></div>
+            <div id="cards"></div>
+        </section>
     </main>
 
     <footer>
@@ -66,12 +68,12 @@
 
         <div class="socials">
             <a href="https://www.youtube.com/">
-                <img src="images/youtube-icon.svg" alt="youtube">
+                <img width='50' height='50' src="images/youtube-icon.svg" alt="youtube">
             </a>
             <a href="https://x.com/">
                 <img src="images/twitter-icon.svg" alt="twitter">
             </a>
-            <a href="www.linkedin.com/in/katherine-druchok">
+            <a href="https://www.linkedin.com/feed/">
                 <img src="images/linkedin-icon.svg" alt="linkedin">
             </a>
         </div>

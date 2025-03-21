@@ -31,19 +31,22 @@ function displayMembers(members, view = 'grid') {
         card.classList.add('member-card', view);
         
         const content = `
-            <h3>${member.name}</h3>
+            <h2>${member.name}</h2>
             <p>${member.address}</p>
             <p>${member.phone}</p>
             <a href="${member.website}" target="_blank">${member.website}</a>
         `;
 
-        card.innerHTML = view === 'grid' ? `<img src="${member.image}" alt="${member.name} Logo">${content}` : content;
+        card.innerHTML = view === 'grid' ? `<img width='500' height='500' src="${member.image}" alt="${member.name} Logo">${content}` : content;
 
         cardsContainer.appendChild(card);
     });
 }
 
-gridButton.addEventListener('click', () => displayMembers(allMembers, 'grid'));
-listButton.addEventListener('click', () => displayMembers(allMembers, 'list'));
+document.querySelector('.layout-select').addEventListener('click', (e) => {
+    if (e.target.id === 'grid' || e.target.id === 'list') {
+        displayMembers(allMembers, e.target.id);
+    }
+});
 
 getMembers();
