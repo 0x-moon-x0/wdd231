@@ -3,24 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calgary Chamber of Commerce | Directory</title>
+    <title>Calgary Chamber of Commerce | Home</title>
     <meta name="author" content="Katherine Druchok">
-    <meta name="description" content="The business directory page for the Calgary Chamber of Commerce">
-    <meta property="og:title" content="Calgary Chamber of Commerce | Directory">
-    <meta property="og:description" content="The business directory page for the Calgary Chamber of Commerce">
+    <meta name="description" content="The home page for the Calgary Chamber of Commerce">
+    <meta property="og:title" content="Calgary Chamber of Commerce | Home">
+    <meta property="og:description" content="The home page for the Calgary Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://0x-moon-x0.github.io/wdd231/chamber/directory/images/calgary-chamber-logo.webp">
-    <meta property="og:url" content="https://0x-moon-x0.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://0x-moon-x0.github.io/wdd231/chamber/index.html">
     <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/directory.css">
-    <link rel="stylesheet" href="styles/directory-large.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="chamber-icon.ico">
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/directory-content.js" defer></script>
     <script src="scripts/date.js" defer></script>
 </head>
 <body>
@@ -45,18 +44,47 @@
     </nav>
 
     <main>
-        <h1 class="page-title">Business Directory</h1>
-
-        <section aria-labelledby="directory-title">
-            <div class="layout-select">
-                <button id="grid">⊞ Grid</button>
-                <button id="list">☳ List</button>
+        <div class="hero-container">
+            <img width="1870" height="1247" id="hero-img" src="images/hero.webp" alt="Cityscape Hero Banner">
+            
+            <div class="hero-text">
+                <p id="hero-title">Supporting Local</p>
+                <p id="hero-subtitle">Growing Together</p>
             </div>
+            
+            <div class="hero-btn">
+                <a href="join.html">Join Us</a>
+            </div>
+        </div>
 
-            <div id="cards"></div>
-        </section>
+        <h1 class="page-title">Home</h1>
+
+        <div class="info-container">
+            <section id="events-section">
+                <h2>Events</h2>
+                <ul>
+                    <li> </li>
+                    <li> </li>
+                    <li> </li>
+                </ul> 
+            </section>
+
+            <section id="current-weather">
+                <h2>Current Weather</h2>
+                <div id="weather-icon">
+                    <img src="" alt="">
+                </div>
+                <div id="current-weather-info"></div>
+            </section>
+
+            <section id="weather-forecast">
+                <h2>Weather Forecast</h2>
+            </section>
+        </div>
+
+        <div id="cards"></div>
     </main>
-
+    
     <footer>
         <div class="contact-info">
             <span class="bold-span">Calgary Chamber of Commerce</span>
