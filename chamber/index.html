@@ -20,6 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="chamber-icon.ico">
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <script src="scripts/date.js" defer></script>
 </head>
 <body>
@@ -71,14 +72,25 @@
 
             <section id="current-weather">
                 <h2>Current Weather</h2>
-                <div id="weather-icon">
-                    <img src="" alt="">
+                <div id="weather-icon-div">
+                    <img id="weather-icon" src="" alt="">
                 </div>
-                <div id="current-weather-info"></div>
+                <div id="current-weather-info">
+                    <p id="current-temp"></p>
+                    <p id="weather-description"></p>
+                    <p id="temp-high"></p>
+                    <p id="temp-low"></p>
+                    <p id="humidity"></p>
+                    <p id="sunrise"></p>
+                    <p id="sunset"></p>
+                </div>
             </section>
 
             <section id="weather-forecast">
                 <h2>Weather Forecast</h2>
+                <p id="today"></p>
+                <p id="day-two"></p>
+                <p id="day-three"></p>
             </section>
         </div>
 
