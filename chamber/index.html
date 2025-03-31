@@ -21,6 +21,7 @@
     <link rel="icon" href="chamber-icon.ico">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
     <script src="scripts/date.js" defer></script>
 </head>
 <body>
@@ -64,9 +65,9 @@
             <section id="events-section">
                 <h2>Events</h2>
                 <ul>
-                    <li> </li>
-                    <li> </li>
-                    <li> </li>
+                    <li><strong>April 15:</strong> Spring Business Networking Mixer — Join us for drinks and speed networking at Wild Prairie Lounge.</li>
+                    <li><strong>May 3:</strong> Tech Innovation Panel — Hosted by Summit Tech Solutions, featuring AI & cloud experts.</li>
+                    <li><strong>May 22:</strong> Marketing Masterclass — Wild Prairie Marketing shares digital strategies for 2025.</li>
                 </ul> 
             </section>
 
@@ -94,12 +95,15 @@
             </section>
         </div>
 
-        <div id="cards"></div>
+        <section id="spotlights">
+            <h2>Member Spotlights</h2>
+            <div class="spotlight-container"></div>
+        </section>
     </main>
     
     <footer>
         <div class="contact-info">
-            <span class="bold-span">Calgary Chamber of Commerce</span>
+            <strong>Calgary Chamber of Commerce</strong>
             <p>3500 19 St NE</p>
             <p>Calgary, AB T2E 8B9</p>
             <p>info@calgarycc.org</p>

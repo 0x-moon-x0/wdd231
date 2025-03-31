@@ -207,10 +207,6 @@ main {
     padding: 4px;
 }
 
-.bold-span {
-    font-weight: bold;
-}
-
 footer {
     background-color: var(--primary-color);
     color: var(--dark-color);

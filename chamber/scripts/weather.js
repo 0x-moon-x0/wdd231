@@ -43,7 +43,7 @@ function displayCurrentWeather(data) {
     const sunrise = new Date(data.sys.sunrise * 1000);
     const sunset = new Date(data.sys.sunset * 1000);
 
-    currentTemp.innerHTML = `<span class="bold-span">${Math.round(data.main.temp)}</span>&deg; C`;
+    currentTemp.innerHTML = `<strong>${Math.round(data.main.temp)}</strong>&deg; C`;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     weatherDesc.textContent = capitalizeWords(desc);
@@ -73,7 +73,7 @@ function displayForecast(data) {
         const dayName = date.toLocaleDateString('en-US', { weekday: 'long' });
         const temp = Math.round(item.main.temp);
 
-        forecastElements[index].innerHTML = `${dayName}: <span class="bold-span">${temp}&deg;C</span>`;
+        forecastElements[index].innerHTML = `${dayName}: <strong>${temp}&deg;C</strong`;
     });
 }
 

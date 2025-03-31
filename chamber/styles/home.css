@@ -197,10 +197,6 @@ h2 {
     padding: 15px 0;
 }
 
-.bold-span {
-    font-weight: bold;
-}
-
 footer {
     background-color: var(--primary-color);
     color: var(--dark-color);
