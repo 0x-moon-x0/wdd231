@@ -125,7 +125,7 @@ nav.open {
 
 .hero-text {
     position: absolute;
-    top: clamp(10%, 20vw, 30%);
+    top: clamp(10%, 20vw, 20%);
     left: clamp(5%, 10vw, 10%);
     color: var(--light-color);
 }
@@ -141,8 +141,8 @@ nav.open {
 
 .hero-btn {
     position: absolute;
-    bottom: clamp(10%, 20vw, 25%);
-    right: clamp(5%, 10vw, 15%);
+    bottom: clamp(10%, 20vw, 15%);
+    right: clamp(5%, 10vw, 10%);
     background-color: var(--primary-color);
     padding: clamp(10px, 2vw, 15px) clamp(15px, 3vw, 20px);
     border: none;
