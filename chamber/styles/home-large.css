@@ -25,17 +25,29 @@
     }
 
     #hero-title {
-        font-size: 8rem;
+        font-size: clamp(5rem, 10vw, 8rem);
         padding-bottom: 3rem;
     }
     
     #hero-subtitle {
-        font-size: 6rem;
+        font-size: clamp(3.4rem, 8vw, 6rem);
+    }
+
+    .hero-text {
+        top: clamp(20%, 10vw, 30%);
+        left: clamp(10%, 5vw, 10%);
     }
 
     .hero-btn {
-        padding: 30px 40px;
-        font-size: 3rem;
+        font-size: clamp(1.5rem, 5vw, 3rem);
+        padding: clamp(10px, 3vw, 20px) clamp(20px, 4vw, 35px);
+        bottom: clamp(5%, 10vw, 25%);
+        right: clamp(10%, 5vw, 15%);
+    }
+
+    .page-title {
+        text-align: left;
+        margin-left: 5rem;
     }
 
     .info-container {

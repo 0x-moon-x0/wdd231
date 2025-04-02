@@ -29,8 +29,8 @@ async function loadSpotlights() {
 
             spotlightContainer.appendChild(card);
         });
-    } catch (err) {
-        console.error('Error loading spotlights:', err);
+    } catch (error) {
+        console.error('Error loading spotlights:', error);
     }
 }
 

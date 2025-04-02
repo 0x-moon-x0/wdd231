@@ -24,6 +24,11 @@
         grid-template-rows: 1fr;
     }
 
+    .page-title {
+        text-align: left;
+        margin-left: 5rem;
+    }
+
     footer {
         flex-direction: row;
     }

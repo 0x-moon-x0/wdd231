@@ -113,10 +113,6 @@ nav.open {
     grid-template-rows: 1fr;
 }
 
-main {
-    /*margin: 2rem;*/
-}
-
 .hero-container {
     position: relative;
     text-align: left;
@@ -129,29 +125,29 @@ main {
 
 .hero-text {
     position: absolute;
-    top: 30%;
-    left: 10%;
+    top: clamp(10%, 20vw, 30%);
+    left: clamp(5%, 10vw, 10%);
     color: var(--light-color);
 }
 
 #hero-title {
-    font-size: 5rem;
+    font-size: clamp(3rem, 6vw, 5rem);
     padding-bottom: 1rem;
 }
 
 #hero-subtitle {
-    font-size: 3.4rem;
+    font-size: clamp(2rem, 5vw, 3.4rem);
 }
 
 .hero-btn {
     position: absolute;
-    bottom: 25%;
-    right: 15%;
+    bottom: clamp(10%, 20vw, 25%);
+    right: clamp(5%, 10vw, 15%);
     background-color: var(--primary-color);
-    padding: 10px 20px;
+    padding: clamp(10px, 2vw, 15px) clamp(15px, 3vw, 20px);
     border: none;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
     transition: 0.3s;
 }
 
@@ -177,6 +173,8 @@ h2 {
     text-align: center;
     padding: 1rem;
     border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 .info-container section {
@@ -191,10 +189,88 @@ h2 {
 
 #events-section ul {
     padding-left: 20px;
+    padding-top: 30px;
 }
 
 #events-section li {
+    font-size: 1.1rem;
     padding: 15px 0;
+}
+
+#weather-forecast p {
+    font-size: 1.3rem;
+    padding: 15px;
+    text-align: left;
+}
+
+#current-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#weather-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#weather-icon-div {
+    flex-shrink: 0;
+}
+
+#weather-icon {
+    width: 90px;
+    height: auto;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(181, 141, 182, 0.623));
+}
+
+#current-weather-info {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 1.1rem;
+    padding: 3px;
+    margin: 15px;
+}
+
+#current-weather-info p {
+    padding: 3px;
+}
+
+#spotlights {
+    margin: 2rem;
+}
+
+.spotlight-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.spotlight img {
+    max-height: 140px;
+    width: auto;
+    padding: 10px;
+}
+
+.spotlight {
+    margin: 0.25rem;
+    padding: 1rem;
+    box-shadow: 0 2px 4px var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spotlight h3 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.spotlight p {
+    padding: 4px;
 }
 
 footer {
