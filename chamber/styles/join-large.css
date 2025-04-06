@@ -1,0 +1,59 @@
+@media only screen and (min-width: 768px) {
+    #logo {
+        margin-left: 50px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    ul.navbar, ul.navbar.open {
+        display: flex;
+        justify-content: right;
+        gap: 80px;
+        margin-right: 35px;
+    }
+
+    .navbar a:hover {
+        background-color: var(--primary-color);
+        color: var(--dark-color);
+    }
+
+    nav {
+        padding: 10px;
+        grid-template-rows: 1fr;
+    }
+
+    .page-title {
+        text-align: left;
+        margin-left: 5rem;
+    }
+
+    .join-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 3rem;
+        max-width: 1000px;
+        margin: 2rem auto;
+        padding: 0 2rem;
+    }
+
+    form {
+        flex: 1;
+        max-width: 600px;
+    }
+
+    .membership-cards {
+        flex: 1;
+        max-width: 400px;
+    }
+
+    .membership-cards .card {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: row;
+    }
+}

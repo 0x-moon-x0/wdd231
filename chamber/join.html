@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calgary Chamber of Commerce | Join</title>
+    <meta name="author" content="Katherine Druchok">
+    <meta name="description" content="Join us at the Calgary Chamber of Commerce!">
+    <meta property="og:title" content="Calgary Chamber of Commerce | Join">
+    <meta property="og:description" content="Join us at the Calgary Chamber of Commerce!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://0x-moon-x0.github.io/wdd231/chamber/directory/images/calgary-chamber-logo.webp">
+    <meta property="og:url" content="https://0x-moon-x0.github.io/wdd231/chamber/join.html">
+    <meta name="twitter:card" content="summary">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="chamber-icon.ico">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+<body>
+    <header>
+        <button id="menu" aria-label="Toggle Navigation Menu"></button>
+
+        <img width='500' height='500' id="logo" src="images/calgary-chamber-logo.webp" alt="Calgary Chamber of Commerce Logo">
+        
+        <div class="header-text">
+            <p id="header-title">Calgary</p>
+            <p id="header-subtitle">Chamber of Commerce</p>
+        </div>
+    </header>
+
+    <nav id="animated-nav">
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 class="page-title">Join</h1>
+
+        <div class="join-container">
+            <form method="get" action="thankyou.html" id="membershipForm">
+                <fieldset>
+                    <legend>Membership Application Form</legend>
+
+                    <label title="First Name">
+                        First Name:
+                        <input type="text" name="firstName" required title="First Name" autocomplete="given-name">
+                    </label>
+        
+                    <label title="Last Name">
+                        Last Name:
+                        <input type="text" name="lastName" required title="Last Name" autocomplete="family-name">
+                    </label>
+        
+                    <label title="Your job title within your organization">
+                        Organizational Title:
+                        <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\\s\\-]{7,}">
+                    </label>
+        
+                    <label title="Email Address">
+                        Email:
+                        <input type="email" name="email" required title="Email Address" autocomplete="email" placeholder="example@domain.com">
+                    </label>
+        
+                    <label title="Mobile Phone Number">
+                        Mobile Phone:
+                        <input type="tel" name="mobile" required title="Mobile Phone" autocomplete="tel">
+                    </label>
+        
+                    <label title="Business or Organization Name">
+                        Organization Name:
+                        <input type="text" name="organization" required title="Organization Name" autocomplete="organization">
+                    </label>
+        
+                    <label title="Membership Level">
+                        Membership Level:
+                        <select name="membershipLevel" title="Select Membership Level">
+                            <option value="np">NP Membership (free)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+        
+                    <label title="Describe your business or organization">
+                        Organization Description:
+                        <textarea name="description" title="Organization Description"></textarea>
+                    </label>
+        
+                    <input type="hidden" id="timestamp" name="timestamp">
+        
+                    <input type="submit" value="Apply for Membership">
+                </fieldset>
+            </form>
+    
+            <div class="membership-cards">
+                <h2>Membership Levels</h2>
+
+                <div class="card">
+                    <h3>Non Profit Membership Level</h3>
+                    <button type="button" onclick="document.getElementById('dialog-np').showModal()">Learn More</button>
+                </div>
+                <div class="card">
+                    <h3>Bronze Membership Level</h3>
+                    <button type="button" onclick="document.getElementById('dialog-bronze').showModal()">Learn More</button>
+                </div>
+                <div class="card">
+                    <h3>Silver Membership Level</h3>
+                    <button type="button" onclick="document.getElementById('dialog-silver').showModal()">Learn More</button>
+                </div>
+                <div class="card">
+                    <h3>Gold Membership Level</h3>
+                    <button type="button" onclick="document.getElementById('dialog-gold').showModal()">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <dialog id="dialog-np">
+            <h3><strong>Non Profit Membership Level</strong></h3>
+            <hr>
+            <p>No fee. Designed for nonprofit organizations. Includes access to basic networking events and listings.</p>
+            <form method="dialog">
+                <button>Close</button>
+            </form>
+        </dialog>
+        
+        <dialog id="dialog-bronze">
+            <h3><strong>Bronze Membership Level</strong></h3>
+            <hr>
+            <p>Entry-level membership. Includes quarterly promotions, directory listing, and event invitations.</p>
+            <form method="dialog">
+                <button>Close</button>
+            </form>
+        </dialog>
+        
+        <dialog id="dialog-silver">
+            <h3><strong>Silver Membership Level</strong></h3>
+            <hr>
+            <p>Everything in Bronze, plus access to webinars, training sessions, and spotlight features.</p>
+            <form method="dialog">
+                <button>Close</button>
+            </form>
+        </dialog>
+        
+        <dialog id="dialog-gold">
+            <h3><strong>Gold Membership Level</strong></h3>
+            <hr>
+            <p>Top-tier access. All Silver benefits plus homepage advertising, VIP networking, and exclusive promotions.</p>
+            <form method="dialog">
+                <button>Close</button>
+            </form>
+        </dialog>
+    </main>
+    
+    <footer>
+        <div class="contact-info">
+            <strong>Calgary Chamber of Commerce</strong>
+            <p>3500 19 St NE</p>
+            <p>Calgary, AB T2E 8B9</p>
+            <p>info@calgarycc.org</p>
+            <p>(403) 286-1500</p>
+        </div>
+
+        <div class="socials">
+            <a href="https://www.youtube.com/">
+                <img width='50' height='50' src="images/youtube-icon.svg" alt="youtube">
+            </a>
+            <a href="https://x.com/">
+                <img width='50' height='50' src="images/twitter-icon.svg" alt="twitter">
+            </a>
+            <a href="https://www.linkedin.com/feed/">
+                <img width='50' height='50' src="images/linkedin-icon.svg" alt="linkedin">
+            </a>
+        </div>
+
+        <div class="course-info">
+            <p>WDD231 Class Project</p>
+            <p>Katherine Druchok</p>
+            <p>©<span id="currentyear"></span> Calgary Chamber of Commerce</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

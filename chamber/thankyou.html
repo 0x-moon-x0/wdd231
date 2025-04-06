@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calgary Chamber of Commerce | Thank You</title>
+    <meta name="author" content="Katherine Druchok">
+    <meta name="description" content="Thank you for joining us at Calgary Chamber of Commerce!">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="chamber-icon.ico">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+<body>
+    <header>
+        <button id="menu" aria-label="Toggle Navigation Menu"></button>
+
+        <img width='500' height='500' id="logo" src="images/calgary-chamber-logo.webp" alt="Calgary Chamber of Commerce Logo">
+        
+        <div class="header-text">
+            <p id="header-title">Calgary</p>
+            <p id="header-subtitle">Chamber of Commerce</p>
+        </div>
+    </header>
+
+    <nav id="animated-nav">
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 class="page-title">Thank you for joining us!</h1>
+
+        <div class="confirmation">
+            <p><strong>First Name:</strong> <span id="firstName"></span></p>
+            <p><strong>Last Name:</strong> <span id="lastName"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Mobile:</strong> <span id="mobile"></span></p>
+            <p><strong>Organization:</strong> <span id="organization"></span></p>
+            <p><strong>Submitted On:</strong> <span id="timestamp"></span></p>
+          </div>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <strong>Calgary Chamber of Commerce</strong>
+            <p>3500 19 St NE</p>
+            <p>Calgary, AB T2E 8B9</p>
+            <p>info@calgarycc.org</p>
+            <p>(403) 286-1500</p>
+        </div>
+
+        <div class="socials">
+            <a href="https://www.youtube.com/">
+                <img width='50' height='50' src="images/youtube-icon.svg" alt="youtube">
+            </a>
+            <a href="https://x.com/">
+                <img width='50' height='50' src="images/twitter-icon.svg" alt="twitter">
+            </a>
+            <a href="https://www.linkedin.com/feed/">
+                <img width='50' height='50' src="images/linkedin-icon.svg" alt="linkedin">
+            </a>
+        </div>
+
+        <div class="course-info">
+            <p>WDD231 Class Project</p>
+            <p>Katherine Druchok</p>
+            <p>©<span id="currentyear"></span> Calgary Chamber of Commerce</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
