@@ -269,6 +269,19 @@ dialog button:hover {
     color: var(--secondary-color);
 }
 
+.confirmation {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 2rem;
+    padding: 0 20px;
+}
+
+.confirmation p {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
 footer {
     background-color: var(--primary-color);
     color: var(--dark-color);
