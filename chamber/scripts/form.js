@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const timestampInput = document.getElementById('timestamp');
-    
+
     if (timestampInput) {
         timestampInput.value = new Date().toLocaleString();
     }
@@ -32,3 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+function closeDialog(id) {
+    document.getElementById(id).close();
+}
