@@ -1,4 +1,7 @@
 @media only screen and (min-width: 768px) {
+
+    /* ===================== SHARED STYLES ===================== */
+
     #logo {
         margin-left: 50px;
     }
@@ -24,6 +27,17 @@
         grid-template-rows: 1fr;
     }
 
+    .page-title {
+        text-align: left;
+        margin-left: 5rem;
+    }
+
+    footer {
+        flex-direction: row;
+    }
+
+    /* ===================== HOME STYLES ===================== */
+
     #hero-title {
         font-size: clamp(5rem, 10vw, 8rem);
         padding-bottom: 3rem;
@@ -45,11 +59,6 @@
         right: clamp(10%, 5vw, 15%);
     }
 
-    .page-title {
-        text-align: left;
-        margin-left: 5rem;
-    }
-
     .info-container {
         display: flex;
         flex-wrap: wrap;
@@ -57,7 +66,29 @@
         justify-content: center;
     }
 
-    footer {
+    /* ===================== JOIN STYLES ===================== */
+
+    .join-container {
         flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 3rem;
+        max-width: 1000px;
+        margin: 2rem auto;
+        padding: 0 2rem;
+    }
+
+    form {
+        flex: 1;
+        max-width: 600px;
+    }
+
+    .membership-cards {
+        flex: 1;
+        max-width: 400px;
+    }
+
+    .membership-cards .card {
+        width: 100%;
     }
 }

@@ -1,0 +1,578 @@
+/* ===================== SHARED STYLES ===================== */
+
+:root {
+    --font: "Urbanist", sans-serif;
+    --primary-color: #B58DB6;
+    --light-color: #F4F4ED;
+    --dark-color: #201E1E;
+    --secondary-color: #B7B8BE;
+    --extra-color: #403F3E;
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+    font-weight: 400;
+}
+  
+body {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+  
+header {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    background-color: var(--primary-color);
+    padding: 25px;
+}
+  
+#logo {
+    width: 130px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+  
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.page-title {
+    font-size: 2.3rem;
+    line-height: 1.2;
+    text-align: center;
+    padding: 20px 0 40px;
+    min-height: 3.5rem;
+}
+  
+#header-title {
+    font-size: 2.8rem;
+    margin-bottom: 8px;
+}
+  
+#header-subtitle {
+    font-size: 1.2rem;
+}
+  
+#menu {
+    font-size: 2.2rem;
+    border: none;
+    background: none;
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 15px;
+}
+  
+#menu::before {
+    content: "☰";
+}
+  
+#menu.open::before {
+    content: "✕";
+}
+  
+ul.navbar li a {
+    display: block;
+    padding: 15px;
+    color: var(--light-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+  
+.navbar a:hover {
+    color: var(--primary-color);
+}
+  
+ul.navbar {
+    list-style-type: none;
+}
+  
+.navbar a.active {
+    border-bottom: 3px solid var(--primary-color);
+    font-weight: bold;
+}
+  
+nav {
+    background-color: var(--dark-color);
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+    font-size: 1.2rem;
+}
+  
+nav ul {
+    overflow: hidden;
+}
+  
+nav.open {
+    grid-template-rows: 1fr;
+}
+  
+footer {
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 20px;
+    font-size: 1.2rem;
+    text-align: left;
+    min-height: 200px;
+}
+  
+footer p {
+    margin: 5px 0;
+    line-height: 1.4;
+}
+  
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px 30px;
+}
+  
+.socials img {
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+  
+.socials a {
+    text-decoration: none;
+}
+
+/* ===================== HOME STYLES ===================== */
+
+.hero-container {
+    position: relative;
+    text-align: left;
+}
+
+.hero-container img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: clamp(5%, 20vw, 20%);
+    left: clamp(5%, 10vw, 10%);
+    color: var(--light-color);
+}
+
+#hero-title {
+    font-size: clamp(2.4rem, 6vw, 4.1rem);
+    padding-bottom: 1rem;
+}
+
+#hero-subtitle {
+    font-size: clamp(1.8rem, 5vw, 3.5rem);
+}
+
+.hero-btn {
+    position: absolute;
+    bottom: clamp(10%, 20vw, 15%);
+    right: clamp(5%, 10vw, 10%);
+    background-color: var(--primary-color);
+    padding: clamp(10px, 2vw, 15px) clamp(15px, 3vw, 20px);
+    border: none;
+    cursor: pointer;
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    transition: 0.3s;
+}
+
+.hero-btn a, active {
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+.hero-btn:hover a {
+    text-decoration: none;
+    color: var(--light-color);
+}
+
+.hero-btn:hover {
+    color: var(--primary-color);
+    background-color: var(--dark-color);
+    border: 1px solid var(--primary-color);
+}
+
+body.home h2 {
+    font-size: 1.4rem;
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.info-container section {
+    padding: 25px;
+    margin-bottom: 35px;
+    box-shadow: 0 2px 4px var(--secondary-color);
+}
+
+#events-section {
+    padding: 20px;
+}
+
+#events-section ul {
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+#events-section li {
+    font-size: 1.1rem;
+    padding: 15px 0;
+}
+
+#weather-forecast p {
+    font-size: 1.3rem;
+    padding: 15px;
+    text-align: left;
+}
+
+#current-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#weather-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#weather-icon-div {
+    flex-shrink: 0;
+}
+
+#weather-icon {
+    width: 90px;
+    height: auto;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(181, 141, 182, 0.623));
+}
+
+#current-weather-info {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 1.1rem;
+    padding: 3px;
+    margin: 15px;
+}
+
+#current-weather-info p {
+    padding: 3px;
+}
+
+#spotlights {
+    margin: 2rem;
+}
+
+.spotlight-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+}
+
+.spotlight img {
+    max-height: 140px;
+    width: auto;
+    padding: 10px;
+}
+
+.spotlight {
+    margin: 0.25rem;
+    padding: 1rem;
+    box-shadow: 0 2px 4px var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spotlight h3 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.spotlight p {
+    padding: 4px;
+}
+
+/* ===================== DIRECTORY STYLES ===================== */
+
+body.directory main {
+    margin: 2rem;
+}
+
+.layout-select {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.layout-select button {
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    margin: 0 20px 30px;
+}
+
+.layout-select button:hover,
+.layout-select button:focus {
+    background-color: var(--dark-color);
+    color: var(--primary-color);
+}
+
+#cards.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+}
+
+#cards.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.member-card.list:nth-child(even) {
+    background-color: var(--secondary-color);
+}
+
+.member-card.list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    border-bottom: 1px solid var(--extra-color);
+    width: 100%;
+}
+
+.member-card.list h2,
+.member-card.list p,
+.member-card.list a {
+    flex: 2;
+    margin: 0;
+    font-size: 1.1rem;
+    word-break: break-word;
+    min-width: 120px;
+}
+
+.member-card.list a {
+    flex: 3;
+    text-align: right;
+}
+
+.member-card img {
+    max-height: 140px;
+    width: auto;
+    padding: 10px;
+}
+
+.member-card {
+    margin: 0.25rem;
+    padding: 1rem;
+    box-shadow: 0 2px 4px var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member-card h3 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.member-card p {
+    padding: 4px;
+}
+
+/* ===================== JOIN & THANK YOU STYLES ===================== */
+
+.join-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: 2rem;
+    padding: 2rem;
+    margin: 2rem auto;
+}
+
+form {
+    width: 100%;
+    max-width: 650px;
+}
+
+fieldset {
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+legend {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    padding-top: 1rem;
+    font-size: 1.1rem;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea {
+    background-color: #fff;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: .7rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+input[type="submit"] {
+    margin-top: 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    padding: .8rem;
+    width: 100%;
+    max-width: 600px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--dark-color);
+    color: var(--primary-color);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+body.join h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-left: 2rem;
+}
+
+body.join h3 {
+    font-size: 1.4rem;
+    padding: 20px;
+}
+
+.card {
+    margin: 2rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px var(--secondary-color);
+    background-color: var(--dark-color);
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card button {
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: 0.3s;
+    margin: 20px 0;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background-color: var(--primary-color);
+    font-weight: bold;
+}
+
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    max-width: 600px;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+dialog h3 {
+    padding: 1.5rem 0;
+    font-size: 1.4rem;
+}
+
+dialog p {
+    padding: 1rem 0;
+    font-size: 1.2rem;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 0.5);
+}
+
+dialog button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 10px;
+    width: auto;
+    color: var(--dark-color);
+    background-color: var(--secondary-color);
+    border: none;
+    transition: 0.3s;
+}
+
+dialog button:hover {
+    background-color: var(--dark-color);
+    color: var(--secondary-color);
+}
+
+.confirmation {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 2rem;
+    padding: 0 20px;
+}
+
+.confirmation p {
+    font-size: 1.2rem;
+    padding: 10px;
+}
