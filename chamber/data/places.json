@@ -1,0 +1,50 @@
+[
+    {
+      "name": "Calgary Tower",
+      "address": "101 9 Ave SW, Calgary, AB T2P 1K1",
+      "image": "https://0x-moon-x0.github.io/wdd231/chamber/images/calgary-tower.webp",
+      "description": "Take in breathtaking 360° views of the city and the Rockies from this iconic observation tower in the heart of downtown Calgary."
+    },
+    {
+      "name": "Heritage Park",
+      "address": "1900 Heritage Dr SW, Calgary, AB T2V 2X3",
+      "image": "https://0x-moon-x0.github.io/wdd231/chamber/images/heritage-park.webp",
+      "description": "Step back in time at Canada's largest living history museum, where costumed interpreters bring the 1860s to 1950s to life with historic buildings, rides, and exhibits."
+    },
+    {
+      "name": "Gasoline Alley Museum",
+      "address": "1900 Heritage Dr SW, Calgary, AB T2V 2X3",
+      "image": "https://0x-moon-x0.github.io/wdd231/chamber/images/gasoline-alley-museum.webp",
+      "description": "Located within Heritage Park, this vibrant museum showcases a stunning collection of vintage vehicles and memorabilia from Alberta's automotive past."
+    },
+    {
+      "name": "TELUS Spark Science Centre",
+      "address": "220 Saint George's Drive Northeast, Calgary, AB T2E 5T2",
+      "image": "https://0x-moon-x0.github.io/wdd231/chamber/images/telus-park-science-centre.webp",
+      "description": "Spark your curiosity at this interactive science museum, featuring hands-on exhibits, live demonstrations, and an immersive dome theatre for all ages."
+    },
+    {
+      "name": "Calgary Central Library",
+      "address": "800 3 St SE, Calgary, AB T2G 2E7",
+      "image": "https://0x-moon-x0.github.io/wdd231/chamber/images/central-library.webp",
+      "description": "A modern architectural gem and cultural hub, this award-winning library offers more than books—explore innovative spaces, art installations, and community events."
+    },
+    {
+      "name": "The Hangar Flight Museum",
+      "address": "4629 McCall Way NE, Calgary, AB T2E 8A5",
+      "image": "https://0x-moon-x0.github.io/wdd231/chamber/images/hangar-flight-museum.webp",
+      "description": "Celebrate Canada's aviation history with impressive aircraft displays, flight simulators, and educational exhibits inside a former WWII hangar."
+    },
+    {
+      "name": "Peace Bridge",
+      "address": "Calgary, AB T2P 7N2",
+      "image": "https://0x-moon-x0.github.io/wdd231/chamber/images/peace-bridge.webp",
+      "description": "This striking red pedestrian bridge spans the Bow River, offering scenic views and connecting downtown Calgary with the city's vibrant north side."
+    },
+    {
+      "name": "Calgary Zoo (Wilder Institute)",
+      "address": "210 St. George's Drive NE, Calgary, AB T2E 7V6",
+      "image": "https://0x-moon-x0.github.io/wdd231/chamber/images/calgary-zoo.webp",
+      "description": "Home to animals from around the world, the Calgary Zoo offers immersive habitats, interactive exhibits, and conservation-focused experiences for visitors of all ages."
+    }
+  ]
