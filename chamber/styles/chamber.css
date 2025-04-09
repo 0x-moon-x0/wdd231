@@ -338,7 +338,8 @@ body.directory main {
     color: var(--primary-color);
 }
 
-#cards.grid {
+#cards.grid,
+.place-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 1rem;
@@ -589,3 +590,6 @@ dialog button:hover {
     font-size: 1.2rem;
     padding: 10px;
 }
+
+/* ===================== DISCOVER STYLES ===================== */
+
