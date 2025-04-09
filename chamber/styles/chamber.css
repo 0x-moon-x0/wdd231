@@ -499,6 +499,8 @@ body.join h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: fadeSlideUp 0.8s ease-out both;
+    animation-delay: var(0.5s, 0s);
 }
 
 .card button {
@@ -515,6 +517,17 @@ body.join h3 {
 .card button:hover {
     background-color: var(--primary-color);
     font-weight: bold;
+}
+
+@keyframes fadeSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 dialog {
