@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- basics -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calgary Chamber of Commerce | Thank You</title>
     <meta name="author" content="Katherine Druchok">
     <meta name="description" content="Thank you for joining us at Calgary Chamber of Commerce!">
+    
+    <!-- styles -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"></noscript>
+    
+    <!-- favicon -->
     <link rel="icon" href="chamber-icon.ico">
+    
+    <!-- scripts -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/form.js" defer></script>
     <script src="scripts/date.js" defer></script>
@@ -61,16 +69,22 @@
         </div>
 
         <div class="socials">
-            <a href="https://www.youtube.com/">
-                <img width='50' height='50' src="images/youtube-icon.svg" alt="youtube">
-            </a>
-            <a href="https://x.com/">
-                <img width='50' height='50' src="images/twitter-icon.svg" alt="twitter">
-            </a>
-            <a href="https://www.linkedin.com/feed/">
-                <img width='50' height='50' src="images/linkedin-icon.svg" alt="linkedin">
-            </a>
-        </div>
+            <figure class="social-icon">
+                <a href="https://www.youtube.com/">
+                    <img src="images/youtube-icon.svg" alt="YouTube">
+                </a>
+            </figure>
+            <figure class="social-icon">
+                <a href="https://x.com/">
+                    <img src="images/twitter-icon.svg" alt="Twitter">
+                </a>
+            </figure>
+            <figure class="social-icon">
+                <a href="https://www.linkedin.com/feed/">
+                    <img src="images/linkedin-icon.svg" alt="LinkedIn">
+                </a>
+            </figure>
+          </div>
 
         <div class="course-info">
             <p>WDD231 Class Project</p>
