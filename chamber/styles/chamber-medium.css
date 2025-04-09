@@ -2,5 +2,15 @@
 
     /* ===================== DISCOVER STYLES ===================== */
 
-    
+    .place-card {
+        grid-template-areas: 
+            "name name"
+            "image description"
+            "image location"
+            "button button";
+    }
+
+    .place-card h2 {
+        text-align: left;
+    }
 }

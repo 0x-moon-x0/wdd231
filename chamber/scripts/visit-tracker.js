@@ -18,6 +18,10 @@ function trackLastVisit() {
     }
 
     localStorage.setItem('lastVisit', now.toString());
+
+    setTimeout(() => {
+        messageContainer.classList.add('animate');
+    }, 100);
 }
 
 trackLastVisit();
