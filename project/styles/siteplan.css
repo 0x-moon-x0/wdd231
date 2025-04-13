@@ -1,0 +1,115 @@
+:root {
+    --primary-color: #645577;
+    --secondary-color: #B8B1DA;
+    --dark-color: #261F2E;
+    --light-color: #F5F5F5;
+    --extra-color: #322A3C;
+
+    --heading-font: "Playwrite GB J", cursive;
+    --paragraph-font: "Quicksand", sans-serif;
+}
+
+* {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 400;
+}
+
+body {
+    max-width: 1200px;
+    padding: 4em;
+}
+
+img {
+    max-width: 1200px;
+    display: block;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+}
+
+h2, h3, h4 {
+    font-family: var(--heading-font);
+    color: var(--dark-color);
+    margin: 1rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+hr {
+    height: 3px;
+    margin: 30px 0;
+    background-color: var(--secondary-color);
+    border: none;
+}
+
+header {
+    padding: 2rem;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+}
+
+p, ul {
+    font-family: var(--paragraph-font);
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--dark-color);
+    padding: 1rem;
+}
+
+table {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+}
+
+table th {
+    background-color: #cac6c6;
+}
+
+table td {
+    width: 20%;
+    height: 3rem;
+}
+
+#primary {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+#secondary {
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+}
+
+#extra {
+    background-color: var(--extra-color);
+    color: var(--light-color);
+}
+
+#dark {
+    background-color: var(--dark-color);
+    color: var(--secondary-color);
+}
+
+#light {
+    background-color: var(--light-color);
+    color: var(--extra-color);
+}
+
+#colored {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+}
