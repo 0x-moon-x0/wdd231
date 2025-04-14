@@ -1,5 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const map = L.map('map').setView([51.0836, -113.9561], 15);
+    const isMobile = window.innerWidth < 768;
+
+    const map = L.map('map', {
+        zoomControl: !isMobile,
+        dragging: !isMobile,
+        tap: !isMobile,
+        scrollWheelZoom: !isMobile
+    }).setView([51.0836, -113.9561], 15);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,

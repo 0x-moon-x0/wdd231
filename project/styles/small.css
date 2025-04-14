@@ -220,11 +220,11 @@ figure.social-icon img {
 }
 
 .hero-btn button {
-    background-color: var(--extra-color);
+    background-color: var(--light-color);
     padding: clamp(0.5rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
     border: none;
     border-radius: 8px;
-    color: var(--light-color);
+    color: var(--extra-color);
     font-size: clamp(1rem, 2.5vw, 1.5rem);
     font-weight: bold;
     cursor: pointer;
@@ -233,8 +233,8 @@ figure.social-icon img {
 }
 
 .hero-btn button:hover {
-    background-color: var(--light-color);
-    color: var(--extra-color);
+    background-color: var(--extra-color);
+    color: var(--light-color);
     border: 1px solid var(--primary-color);
 }
 
@@ -266,4 +266,88 @@ body.home h2 {
 #events-section li {
     font-size: 1.1rem;
     padding: 15px 0;
+}
+
+#bestsellers-container {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+    will-change: transform;
+}
+
+.bestseller-card {
+    flex: 0 0 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0.4;
+    transform: scale(0.9);
+    transition: all 0.6s ease-in-out;
+    max-width: 100%;
+    text-align: center;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(50, 42, 60, 0.1);
+    margin-bottom: 20px;
+}
+
+.bestseller-card img {
+    width: 100%;
+    max-width: 400px;
+    max-height: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bestseller-card h3 {
+    font-size: 1.4rem;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.bestseller-card p {
+    font-size: 1.1rem;
+    margin: 8px 0;
+    color: var(--dark-color);
+}
+
+.bestseller-card button {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bestseller-card button:hover {
+    background-color: var(--extra-color);
+}
+
+.bestseller-card.center {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 2;
+}
+
+.bestseller-card.side {
+    opacity: 0.4;
+    transform: scale(0.9);
+    z-index: 1;
 }
