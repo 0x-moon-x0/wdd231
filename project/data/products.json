@@ -1,0 +1,135 @@
+[
+    {
+        "productName": "Crochet Axolotls",
+        "description": "Cute crochet axolotls made out of soft plush yarn.",
+        "author": "Mariia",
+        "price": 12,
+        "image": "https://0x-moon-x0.github.io/wdd231/project/images/crochet-axolotls.webp"
+    },
+    {
+        "productName": "Drop Earrings",
+        "description": "Stylish drop earrings with bows.",
+        "author": "Katherine",
+        "price": 8.50,
+        "image": "https://0x-moon-x0.github.io/wdd231/project/images/earrings.webp"
+    },
+    {
+        "productName": "Crochet Hat",
+        "description": "Crochet alternative fashion hat with cat ears.",
+        "author": "Mariia",
+        "price": 20,
+        "image": "https://0x-moon-x0.github.io/wdd231/project/images/crochet-hat.webp"
+    },
+    {
+        "productName": "Flower Hairpins",
+        "description": "Delicate flower hairpins made out of EVA foam.",
+        "author": "Liudmyla",
+        "price": 10.50,
+        "image": "https://0x-moon-x0.github.io/wdd231/project/images/flower-hairpins.webp"
+    },
+    {
+        "productName": "Crochet Capybaras",
+        "description": "Adorable crochet capybaras in different sizes.",
+        "author": "Mariia",
+        "price": 7,
+        "image": "https://0x-moon-x0.github.io/wdd231/project/images/crochet-capybaras.webp"
+    },
+    {
+        "productName": "Frog Keychain",
+        "description": "Tiny frog keychain made out of seed beads.",
+        "author": "Katherine",
+        "price": 15,
+        "image": "https://0x-moon-x0.github.io/wdd231/project/images/seed-bead-frog.webp"
+    },
+    {
+        "productName": "Crochet Bunny",
+        "description": "Cute crochet baby bunny in a romper.",
+        "author": "Mariia",
+        "price": 15,
+        "image": "https://0x-moon-x0.github.io/wdd231/project/images/crochet-bunny.webp"
+    },
+    {
+        "productName": "Daisy Jewelry Set",
+        "description": "Daisy bracelet and ring set made out of seed beads.",
+        "author": "Katherine",
+        "price": 10,
+        "image": "https://0x-moon-x0.github.io/wdd231/project/images/daisy-bead-bracelet-and-ring.webp"
+    },
+    {
+        "productName": "Baby Car Seat Cover",
+        "description": "Custom designed and individually tailored baby car seat cover.",
+        "author": "Liudmyla",
+        "price": 50,
+        "image": "https://0x-moon-x0.github.io/wdd231/project/images/car-seat-cover-blue.webp"
+    },
+    {
+        "productName": "Polymer Mooshroom Cow",
+        "description": "Miniature minecraft mooshroom cow keychain out of polymer clay.",
+        "author": "Katherine",
+        "price": 35.50,
+        "image": "https://0x-moon-x0.github.io/wdd231/project/images/polymer-minecraft.webp"
+    },
+    {
+        "productName": "Glasses Case",
+        "description": "Custom designed and sewn jean case for glasses.",
+        "author": "Liudmyla",
+        "price": 25,
+        "image": "https://0x-moon-x0.github.io/wdd231/project/images/glasses-case.webp"
+    },
+    {
+        "productName": "Crochet Keychains",
+        "description": "Small crochet round animal keychains.",
+        "author": "Mariia",
+        "price": 5.50,
+        "image": "https://0x-moon-x0.github.io/wdd231/project/images/crochet-keychains.webp"
+    },
+    {
+        "productName": "Phone Charms",
+        "description": "Customizable phone charm keychains.",
+        "author": "Katherine",
+        "price": 18,
+        "image": "https://0x-moon-x0.github.io/wdd231/project/images/phone-charms.webp"
+    },
+    {
+        "productName": "Crochet Pugs",
+        "description": "Little crochet pugs in different outfits.",
+        "author": "Mariia",
+        "price": 16,
+        "image": "https://0x-moon-x0.github.io/wdd231/project/images/crochet-pugs.webp"
+    },
+    {
+        "productName": "Crochet Pop Mushroom",
+        "description": "Cute crochet mushroom with a top that pops in and out.",
+        "author": "Mariia",
+        "price": 18.50,
+        "image": "https://0x-moon-x0.github.io/wdd231/project/images/crochet-mushroom.webp"
+    },
+    {
+        "productName": "Crochet Flower Cows",
+        "description": "Various adorable crochet cows with flower themes.",
+        "author": "Mariia",
+        "price": 25.50,
+        "image": "https://0x-moon-x0.github.io/wdd231/project/images/crochet-cows.webp"
+    },
+    {
+        "productName": "Crochet Chicks",
+        "description": "Small ball-shaped crochet chicks.",
+        "author": "Mariia",
+        "price": 5,
+        "image": "https://0x-moon-x0.github.io/wdd231/project/images/crochet-chicks.webp"
+    },
+    {
+        "productName": "Kauri Shell Bracelet",
+        "description": "Elegant kauri shell nylon thread macrame bracelet.",
+        "author": "Katherine",
+        "price": 10,
+        "image": "https://0x-moon-x0.github.io/wdd231/project/images/kauri-bracelet.webp"
+    },
+    {
+        "productName": "Embroidered Stone Necklace",
+        "description": "Natural ruby zoisite stone pendant carefully embroidered with miyuki seed beads.",
+        "author": "Mariia",
+        "price": 85,
+        "image": "https://0x-moon-x0.github.io/wdd231/project/images/embroidered-stone-necklace.webp"
+    }
+]
