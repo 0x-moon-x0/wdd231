@@ -13,7 +13,7 @@ async function loadPlaces() {
             card.innerHTML = `
                 <h2>${place.name}</h2>
                 <figure>
-                    <img width="300" height="200" src="${place.image}" alt="Image of ${place.name} loading="lazy">
+                    <img width="300" height="200" src="${place.image}" alt="Image of ${place.name}" loading="lazy">
                 </figure>
                 <address>${place.address}</address>
                 <p>${place.description}</p>

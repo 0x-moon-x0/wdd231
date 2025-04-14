@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- basics -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mary Made Stuff | About Us</title>
+    <meta name="author" content="Katherine Druchok">
+    <meta name="description" content="Learn more about the Mary Made Stuff craft store">
+
+    <!-- socials meta -->
+    <meta property="og:title" content="Mary Made Stuff | About Us">
+    <meta property="og:description" content="Learn more about the Mary Made Stuff craft store">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://0x-moon-x0.github.io/wdd231/project/images/logo.webp">
+    <meta property="og:url" content="https://0x-moon-x0.github.io/wdd231/project/about.html">
+    <meta name="twitter:card" content="summary">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&family=Quicksand:wght@300..700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&family=Quicksand:wght@300..700&display=swap"></noscript>
+
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+<body class="about">
+    <header>
+        <button id="menu" aria-label="Toggle Navigation Menu"></button>
+
+        <img width='300' height='300' id="logo" src="images/logo.webp" alt="Mary Made Stuff Logo">
+        
+        <div class="header-text">
+            <p id="header-title">Mary Made Stuff</p>
+            <p id="header-subtitle">Handmade Crafts</p>
+        </div>
+    </header>
+
+    <nav id="animated-nav">
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 class="page-title">About Us</h1>
+
+        <section class="intro-section">
+            <h2>What We Make</h2>
+            <div class="intro-content">
+                <img width="500" height="500" src="images/crochet-hello-kitty.webp" alt="Image of crochet hello kitty plush" loading="lazy">
+                <p>Here, in the Mary Made Stuff store, we offer a wide variety of handmade crafts, such as toys, jewelry, accessories, and more! Our small team of creative minds each has a unique talent that they use to bring ideas to life.</p>
+            </div>
+        </section>
+
+        <section class="offers-section">
+            <h2>We Offer...</h2>
+
+            <div class="offers-content">
+                <ul>
+                    <li><strong>Jewelry:</strong> Bracelets, earrings, rings, anklets, and more, all handcrafted with a variety of beads, metals, and stones.</li>
+                    <li><strong>Toys:</strong> Lovingly crafted crochet and sewn toys.</li>
+                    <li><strong>Baby Car Seat Covers:</strong> Soft, custom designs to keep little ones cozy.</li>
+                    <li><strong>Accessories:</strong> Headpieces, cosplay props, pins, hair accessories, and unique items to complete any look.</li>
+                    <li><strong>Seed Bead Crafts:</strong> Charms, intricate jewelry, and more made from seed beads.</li>
+                    <li><strong>Clothing Repairs and Tailoring:</strong> Thoughtful fixes and custom tailoring for a perfect fit.</li>
+                    <li><strong>And More:</strong> Each piece is one-of-a-kind, designed to add a bit of magic to your day.</li>
+                </ul>
+                <div class="offers-images">
+                    <img width="500" height="500" src="images/crochet-keychains.webp" alt="Image of crochet animal keychains" loading="lazy">
+                    <img width="500" height="500" src="images/gold-bracelet.webp" alt="Image of a gold bracelet" loading="lazy">
+                    <img width="500" height="500" src="images/seed-bead-birds.webp" alt="Image of tiny seed bead birds" loading="lazy">
+                    <img width="500" height="500" src="images/glasses-case.webp" alt="Image of a case for glasses" loading="lazy">
+                </div>
+            </div>
+            <a href="catalog.html"><button type="button">Browse Our Catalog</button></a>
+        </section>
+
+        <section class="custom-section">
+            <h2>Customization</h2>
+            <div class="custom-content">
+                <div class="custom-text">
+                    <p>At Mary Made Stuff, we believe every item should be as unique as the person receiving it. That's why we offer customization on each of our products!</p>
+                    <p>Customers can select colors, materials like beads and stones for jewelry, and fabrics. If you have a vision or a photo for inspiration, bring it along, and we'll do our best to create a piece that fits your style perfectly.</p>
+                </div>
+                <div class="custom-images">
+                    <img width="500" height="500" src="images/crochet-cows.webp" alt="Image of crochet cows" loading="lazy">
+                    <img width="500" height="500" src="images/phone-charms.webp" alt="Image of phone charms" loading="lazy">
+                </div>
+            </div>
+        </section>
+        
+        <div class="team-section">
+            <h2>Our Team</h2>
+            <div class="team-members">
+                <figure>
+                    <img width="500" height="500" src="images/mary.webp" alt="Image of Mariia" loading="lazy">
+                    <figcaption><strong>Mariia (Mary)</strong></figcaption>
+                    <figcaption>Socials Manager, Crochet Master, Super Awesome CEO</figcaption>
+                </figure>
+                
+                <figure>
+                    <img width="500" height="500" src="images/kate.webp" alt="Image of Katherine" loading="lazy">
+                    <figcaption><strong>Katherine (Kate)</strong></figcaption>
+                    <figcaption>Web Designer & Dev, Bead Craft Enjoyer, CEO's Assistant</figcaption>
+                </figure>
+
+                <figure>
+                    <img width="500" height="500" src="images/myla.webp" alt="Image of Liudmyla" loading="lazy">
+                    <figcaption><strong>Liudmyla (Myla)</strong></figcaption>
+                    <figcaption>Exceptional Seamstress, Creative Visionary, THE Boss</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div class="team-desc">
+            <p>Our team's mission is to bring joy and creativity into every piece we make. At Mary Made Stuff, we're here to make your dreams come true, one handmade item at a time.</p>
+            <p>Nothing brings us more happiness than creating items that delight and inspire our customers!</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <strong>Mary Made Stuff</strong>
+            <p>2640 52 St NE</p>
+            <p>Calgary, AB T1Y 3R6</p>
+            <p>marymadestuff@gmail.com</p>
+            <p>(825) 286-1500</p>
+        </div>
+
+        <div class="socials">
+            <figure class="social-icon">
+                <a href="https://ca.pinterest.com/MariiaKhomik/">
+                    <img width='60' height='60' src="images/pinterest-icon.svg" alt="Pinterest">
+                </a>
+            </figure>
+            <figure class="social-icon">
+                <a href="https://www.instagram.com/marymadestuff/">
+                    <img width='60' height='60' src="images/instagram-icon.svg" alt="Instagram">
+                </a>
+            </figure>
+            <figure class="social-icon">
+                <a href="https://www.facebook.com/MaryMadeStuff/">
+                    <img width='60' height='60' src="images/facebook-icon.svg" alt="Facebook">
+                </a>
+            </figure>
+          </div>
+
+        <div class="course-info">
+            <p>WDD231 Class Project</p>
+            <p>Katherine Druchok</p>
+            <p>©<span id="currentyear"></span> Mary Made Stuff</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

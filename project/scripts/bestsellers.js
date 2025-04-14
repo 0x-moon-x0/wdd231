@@ -49,8 +49,10 @@ function renderCarousel(products) {
             card.classList.remove('center', 'side');
             if (i === index) {
                 card.classList.add('center');
+                card.setAttribute('aria-hidden', 'false');
             } else {
                 card.classList.add('side');
+                card.setAttribute('aria-hidden', 'true');
             }
         });
 

@@ -351,3 +351,138 @@ body.home h2 {
     transform: scale(0.9);
     z-index: 1;
 }
+
+/* ===================== ABOUT US STYLES ===================== */
+
+body.about section {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 25px;
+    max-width: 80%;
+    margin: 3rem auto;
+}
+
+body.about section h2 {
+    font-family: var(--heading-font);
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 20px 0;
+}
+
+body.about section p,
+body.about section ul {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: left;
+    padding-left: 1.5rem;
+}
+
+.intro-content,
+.offers-content,
+.custom-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.intro-content img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    padding-top: 20px;
+}
+
+.offers-images {
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    flex: 1;
+}
+
+.custom-images {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.custom-images img {
+    max-width: 40%;
+    height: auto;
+}
+
+.offers-images img {
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.intro-content p,
+.offers-content ul,
+.custom-text {
+    flex: 1;
+}
+
+.offers-content ul {
+    padding-right: 1.5rem;
+}
+
+.offers-section button {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.offers-section button:hover {
+    background-color: var(--dark-color);
+}
+
+.team-section h2 {
+    text-align: center;
+    font-family: var(--heading-font);
+    font-weight: bold;
+    font-size: 2rem;
+    padding-bottom: 50px;
+}
+
+.team-members {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.team-section figure img {
+    max-width: 70%;
+    height: auto;
+    margin-top: 2rem;
+}
+
+figcaption {
+    font-weight: 500;
+}
+
+.team-desc {
+    text-align: center;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 25px;
+    max-width: 60%;
+    margin: 3rem auto;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}

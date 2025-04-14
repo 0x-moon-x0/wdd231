@@ -1,6 +1,6 @@
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('#animated-nav');
-const navLinks = document.querySelectorAll('.navbar a')
+const navLinks = document.querySelectorAll('.navbar a');
 
 hamButton.setAttribute('aria-expanded', navigation.classList.contains('open'));
 
