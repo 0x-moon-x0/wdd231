@@ -201,7 +201,7 @@ figure.social-icon img {
 }
 
 .hero-text {
-    top: 30%;
+    top: 25%;
     color: var(--light-color);
 }
 
@@ -217,25 +217,30 @@ figure.social-icon img {
 
 .hero-btn {
     bottom: 15%;
-}
-
-.hero-btn button {
     background-color: var(--light-color);
     padding: clamp(0.5rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
     border: none;
     border-radius: 8px;
-    color: var(--extra-color);
     font-size: clamp(1rem, 2.5vw, 1.5rem);
-    font-weight: bold;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: 0.3s ease;
 }
 
-.hero-btn button:hover {
-    background-color: var(--extra-color);
-    color: var(--light-color);
-    border: 1px solid var(--primary-color);
+.hero-btn a, active {
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+.hero-btn:hover a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: bold;
+}
+
+.hero-btn:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 body.home h2 {
