@@ -4,6 +4,7 @@ const bestsellersContainer = document.querySelector('#bestsellers-container');
 async function loadBestSellers() {
     try {
         const response = await fetch(productsURL);
+        if (!response.ok) throw new Error('Failed to load products.');
         const products = await response.json();
 
         const bestSellers = products.filter(product =>
@@ -27,9 +28,9 @@ function renderCarousel(products) {
             <h3>${product.productName}</h3>
             <p>${product.description}</p>
             <p><strong>By:</strong> ${product.author}</p>
-            <p><strong>Price:</strong> $${product.price.toFixed(2)}</p>
+            <p><strong>$${product.price.toFixed(2)}</strong></p>
             <img src="${product.image}" alt="${product.productName}" loading="lazy">
-            <a href="catalog.html"><button>View Catalog</button></a>
+            <a href="catalog.html">View Catalog</a>
         `;
         track.appendChild(card);
     });

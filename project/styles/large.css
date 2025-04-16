@@ -100,4 +100,20 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
+    /* ===================== CATALOG STYLES ===================== */
+
+    #visit-message {
+        text-align: left;
+        padding: 20px 0 20px 60px;
+    }
+
+    .product-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
 }

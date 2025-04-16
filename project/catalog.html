@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- basics -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mary Made Stuff | Catalog</title>
+    <meta name="author" content="Katherine Druchok">
+    <meta name="description" content="A catalog of items available for purchase in the Mary Made Stuff craft store">
+
+    <!-- socials meta -->
+    <meta property="og:title" content="Mary Made Stuff | Catalog">
+    <meta property="og:description" content="A catalog of items available for purchase in the Mary Made Stuff craft store">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://0x-moon-x0.github.io/wdd231/project/images/logo.webp">
+    <meta property="og:url" content="https://0x-moon-x0.github.io/wdd231/project/catalog.html">
+    <meta name="twitter:card" content="summary">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&family=Quicksand:wght@300..700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&family=Quicksand:wght@300..700&display=swap"></noscript>
+
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/catalog.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+<body class="catalog">
+    <header>
+        <button id="menu" aria-label="Toggle Navigation Menu"></button>
+
+        <img width='300' height='300' id="logo" src="images/logo.webp" alt="Mary Made Stuff Logo">
+        
+        <div class="header-text">
+            <p id="header-title">Mary Made Stuff</p>
+            <p id="header-subtitle">Handmade Crafts</p>
+        </div>
+    </header>
+
+    <nav id="animated-nav">
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 class="page-title">Catalog</h1>
+        <p id="visit-message"></p>
+
+        <div id="dropdown">
+            <label for="sort-price">Sort:</label>
+            <select id="sort-price">
+                <option value="best">Best Selling</option>
+                <option value="asc">Low to High</option>
+                <option value="desc">High to Low</option>
+            </select>
+        </div>
+
+        <div id="products-grid"></div>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <strong>Mary Made Stuff</strong>
+            <p>2640 52 St NE</p>
+            <p>Calgary, AB T1Y 3R6</p>
+            <p>marymadestuff@gmail.com</p>
+            <p>(825) 286-1500</p>
+        </div>
+
+        <div class="socials">
+            <figure class="social-icon">
+                <a href="https://ca.pinterest.com/MariiaKhomik/">
+                    <img width='60' height='60' src="images/pinterest-icon.svg" alt="Pinterest">
+                </a>
+            </figure>
+            <figure class="social-icon">
+                <a href="https://www.instagram.com/marymadestuff/">
+                    <img width='60' height='60' src="images/instagram-icon.svg" alt="Instagram">
+                </a>
+            </figure>
+            <figure class="social-icon">
+                <a href="https://www.facebook.com/MaryMadeStuff/">
+                    <img width='60' height='60' src="images/facebook-icon.svg" alt="Facebook">
+                </a>
+            </figure>
+          </div>
+
+        <div class="course-info">
+            <p>WDD231 Class Project</p>
+            <p>Katherine Druchok</p>
+            <p>©<span id="currentyear"></span> Mary Made Stuff</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
