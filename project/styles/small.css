@@ -537,6 +537,10 @@ figcaption {
     font-size: 1.2rem;
 }
 
+#dropdown label {
+    display: block;
+}
+
 #sort-price {
     border: 1px solid var(--secondary-color);
     border-radius: 3px;
