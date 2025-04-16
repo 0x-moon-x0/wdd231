@@ -436,7 +436,7 @@ body.about section ul {
     padding-right: 1.5rem;
 }
 
-.offers-section button {
+.offers-btn {
     width: 100%;
     margin-top: 1.5rem;
     padding: 1rem;
@@ -448,9 +448,19 @@ body.about section ul {
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s ease;
+    text-align: center;
 }
 
-.offers-section button:hover {
+.offers-btn a, active {
+    text-decoration: none;
+    color: var(--light-color);
+}
+
+.offers-btn:hover a {
+    text-decoration: none;
+}
+
+.offers-btn:hover {
     background-color: var(--dark-color);
 }
 
