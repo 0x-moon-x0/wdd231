@@ -116,4 +116,15 @@
         box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
     }
 
+    /* ===================== CONTACT US & THANK YOU STYLES ===================== */
+
+    form {
+        margin-left: 4rem;
+        max-width: 850px;
+    }
+
+    .confirmation {
+        margin-left: 4rem;
+        max-width: 850px;
+    }
 }

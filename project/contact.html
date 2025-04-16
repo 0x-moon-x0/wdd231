@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- basics -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mary Made Stuff | Contact Us</title>
+    <meta name="author" content="Katherine Druchok">
+    <meta name="description" content="Reach out to the Mary Made Stuff team for any inquiries!">
+
+    <!-- socials meta -->
+    <meta property="og:title" content="Mary Made Stuff | Contact Us">
+    <meta property="og:description" content="Reach out to the Mary Made Stuff team for any inquiries!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://0x-moon-x0.github.io/wdd231/project/images/logo.webp">
+    <meta property="og:url" content="https://0x-moon-x0.github.io/wdd231/project/contact.html">
+    <meta name="twitter:card" content="summary">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&family=Quicksand:wght@300..700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&family=Quicksand:wght@300..700&display=swap"></noscript>
+
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/product-select.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+<body class="contact">
+    <header>
+        <button id="menu" aria-label="Toggle Navigation Menu"></button>
+
+        <img width='300' height='300' id="logo" src="images/logo.webp" alt="Mary Made Stuff Logo">
+        
+        <div class="header-text">
+            <p id="header-title">Mary Made Stuff</p>
+            <p id="header-subtitle">Handmade Crafts</p>
+        </div>
+    </header>
+
+    <nav id="animated-nav">
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 class="page-title">Contact Us</h1>
+
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <div>
+                    <label for="name">Name *</label>
+                    <input type="text" name="name" autocomplete="name" title="Your Name" placeholder=" Enter your name" required>
+                </div>
+                <div>
+                    <label for="email">Email *</label>
+                    <input type="email" name="email" title="Your Email Address" placeholder=" someone@gmail.com" required>
+                </div>
+                <div>
+                    <label for="phone">Phone <span class="optional">(Optional)</span></label>
+                    <input type="tel" name="phone" title="Your Phone Number" placeholder=" 987-555-1234">
+                </div>
+                <label for="productSelect">Product of Inquiry <span class="optional">(Optional)</span></label>
+                    <select id="productSelect" name="product">
+                        <option value="" disabled selected>Select a Product ...</option>
+                    </select>
+                <div>
+                    <label for="message">Message *
+                        <textarea id="message" name="message" rows="6" cols="70" placeholder=" Anything you want to say ..." required></textarea>
+                    </label>
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <strong>Mary Made Stuff</strong>
+            <p>2640 52 St NE</p>
+            <p>Calgary, AB T1Y 3R6</p>
+            <p>marymadestuff@gmail.com</p>
+            <p>(825) 286-1500</p>
+        </div>
+
+        <div class="socials">
+            <figure class="social-icon">
+                <a href="https://ca.pinterest.com/MariiaKhomik/">
+                    <img width='60' height='60' src="images/pinterest-icon.svg" alt="Pinterest">
+                </a>
+            </figure>
+            <figure class="social-icon">
+                <a href="https://www.instagram.com/marymadestuff/">
+                    <img width='60' height='60' src="images/instagram-icon.svg" alt="Instagram">
+                </a>
+            </figure>
+            <figure class="social-icon">
+                <a href="https://www.facebook.com/MaryMadeStuff/">
+                    <img width='60' height='60' src="images/facebook-icon.svg" alt="Facebook">
+                </a>
+            </figure>
+          </div>
+
+        <div class="course-info">
+            <p>WDD231 Class Project</p>
+            <p>Katherine Druchok</p>
+            <p>©<span id="currentyear"></span> Mary Made Stuff</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

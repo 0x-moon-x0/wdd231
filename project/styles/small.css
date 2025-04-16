@@ -588,3 +588,79 @@ figcaption {
 .author {
     padding-bottom: 5px;
 }
+
+/* ===================== CONTACT US & THANK YOU STYLES ===================== */
+
+form {
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(50, 42, 60, 0.1);
+    font-size: 1.1rem;
+}
+
+form fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    background-color: #fff;
+    color: var(--dark-color);
+}
+
+form input[type="submit"] {
+    padding: 0.75rem;
+    margin-top: 1rem;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    width: 100%;
+}
+
+form input[type="submit"]:hover {
+    background-color: var(--extra-color);
+}
+
+.optional {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--dark-color);
+}
+
+.confirmation {
+    max-width: 700px;
+    margin: 3rem auto;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(50, 42, 60, 0.1);
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+.confirmation p {
+    margin-bottom: 1rem;
+}
