@@ -439,8 +439,17 @@ body.about section ul {
 }
 
 .offers-btn {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
+}
+
+.offers-btn a {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
     padding: 1rem;
     font-size: 1.2rem;
     background-color: var(--primary-color);
@@ -449,26 +458,20 @@ body.about section ul {
     border-radius: 6px;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s ease;
-    text-align: center;
-}
-
-.offers-btn a, active {
-    text-decoration: none;
-    color: var(--light-color);
-}
-
-.offers-btn:hover a {
+    transition: background-color 0.3s ease, transform 0.2s ease;
     text-decoration: none;
 }
 
-.offers-btn:hover {
+.offers-btn a:hover {
     background-color: var(--dark-color);
+    transform: scale(1.02);
+    text-decoration: none;
 }
 
 .team-section h2 {
     text-align: center;
     font-family: var(--heading-font);
+    color: var(--extra-color);
     font-weight: bold;
     font-size: 2rem;
     padding-bottom: 50px;
